@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "ListShipper";
+}
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+<h1>List Of Shippers</h1><br />
+<table>
+    <tr>
+        <th>Shipper Id</th>
+        <th>Company Name</th>
+        <th>Phone</th>
+        <th>Update</th>
+    </tr>
+    @foreach (var a in ViewBag.aListOfShipper)
+    {
+        <tr>
+            <td>@Html.Raw(a.ShipperId)</td>
+            <td>@Html.Raw(a.CompanyName)</td>
+            <td>@Html.Raw(a.Phone)</td>
+            <td><a href="GetUpdateShipper?id=@a.ShipperId">Update</a></td>
+        </tr>
+    }
+</table><br /><br />

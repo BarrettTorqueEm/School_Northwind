@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "ListProduct";
+}
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+<h1>List Of Products</h1><br />
+<table>
+    <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Supplier</th>
+        <th>Category</th>
+        <th>Quantity Per Unit</th>
+        <th>Units In Stock</th>
+        <th>Units On Order</th>   
+        <th>Reorder Level</th>
+        <th>Discontinued</th>
+    </tr>
+
+    @foreach (var a in ViewBag.aListOfProduct)
+    {
+        <tr>
+            <td>@Html.Raw(a.ProductId)</td>
+            <td>@Html.Raw(a.ProductName)</td>
+            <td>@Html.Raw(a.Supplier)</td>
+            <td>@Html.Raw(a.Category)</td>
+            <td>@Html.Raw(a.QuantityPerUnit)</td>
+            <td>@Html.Raw(a.UnitsInStock)</td>
+            <td>@Html.Raw(a.UnitsOnOrder)</td>
+            <td>@Html.Raw(a.ReorderLevel)</td>
+            <td>@Html.Raw(a.Discontinued)</td>
+        </tr>
+    }
+</table><br /><br />

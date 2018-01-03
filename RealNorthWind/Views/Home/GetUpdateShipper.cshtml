@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "GetUpdateShipper";
+}
+
+<h2>GetUpdateShipper</h2>
+
+<form action="UpdateShipper?aId=aId, aCompanyName=aCompanyName, aPhone=aPhone">
+
+    Shipper Id:  <input type="number" name="aId" value="@ViewBag.AShipper.ShipperId" readonly /><br />
+
+    Company Name: <input type="text" name="aCompanyName" value="@ViewBag.AShipper.CompanyName" /><br />
+
+    Phone: <input type="text" name="aPhone" value="@ViewBag.AShipper.Phone" /><br />
+
+    <input type="submit" />
+
+</form>

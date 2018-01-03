@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "ListOrder";
+}
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+<h1>List Of Orders</h1><br />
+<table>
+    <tr>
+        <th>Order Id</th>
+        <th>Customer</th>
+        <th>Employee</th>
+        <th>Order Date</th>
+        <th>Required Date</th>
+        <th>Shipped Date</th>
+        <th>Ship Via</th>
+        <th>Freight</th>
+        <th>Ship Name</th>
+        <th>Ship Address</th>
+        <th>Ship City</th>
+        <th>Ship Region</th>
+        <th>Ship Postal Code</th>
+        <th>Ship Country</th>
+        <th>Update</th>
+    </tr>
+
+    @foreach (var a in ViewBag.aListOfOrder)
+    {
+        <tr>
+            <td>@Html.Raw(a.OrderId)</td>
+            <td>@Html.Raw(a.CustomerId)</td>
+            <td>@Html.Raw(a.EmployeeId)</td>
+            <td>@Html.Raw(a.OrderDate)</td>
+            <td>@Html.Raw(a.RequiredDate)</td>
+            <td>@Html.Raw(a.ShippedDate)</td>
+            <td>@Html.Raw(a.ShipVia)</td>
+            <td>@Html.Raw(a.Freight)</td>
+            <td>@Html.Raw(a.ShipName)</td>
+            <td>@Html.Raw(a.ShipAddress)</td>
+            <td>@Html.Raw(a.ShipCity)</td>
+            <td>@Html.Raw(a.ShipRegion)</td>
+            <td>@Html.Raw(a.ShipPostalCode)</td>
+            <td>@Html.Raw(a.ShipCountry)</td>
+            <td><a href="GetUpdateOrder?id=@a.OrderId">Update</a></td>
+        </tr>
+    }
+</table><br /><br />

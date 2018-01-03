@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "GetUpdateCustomer";
+}
+
+<h2>GetUpdateCustomer</h2>
+
+<form action="UpdateCustomer?aId=aId, aCompanyName=aCompanyName, aContactName=aContactName, aContactTitle=aContactTitle, anAddress=anAddress, aCity=aCity, aRegion=aRegion, aPostalCode=aPostalCode, aCountry=aCountry, aPhone=aPhone, aFax=aFax">
+
+    Customer Id:  <input type="text" name="aId" value="@ViewBag.ACustomer.CustomerId" readonly /><br />
+
+    Company Name: <input type="text" name="aCompanyName" value="@ViewBag.ACustomer.CompanyName" /><br />
+
+    Contact Name: <input type="text" name="aContactName" value="@ViewBag.ACustomer.ContactName" /><br />
+
+    Contact Title: <input type="text" name="aContactTitle" value="@ViewBag.ACustomer.ContactTitle" /><br />
+
+    Address: <input type="text" name="anAddress" value="@ViewBag.ACustomer.Address" /><br />
+
+    City: <input type="text" name="aCity" value="@ViewBag.ACustomer.City" /><br />
+
+    Region: <input type="text" name="aRegion" value="@ViewBag.ACustomer.Region" /><br />
+
+    Postal Code: <input type="text" name="aPostalCode" value="@ViewBag.ACustomer.PostalCode" /><br />
+
+    Country: <input type="text" name="aCountry" value="@ViewBag.ACustomer.Country" /><br />
+
+    Phone: <input type="text" name="aPhone" value="@ViewBag.ACustomer.Phone" /><br />
+
+    Fax: <input type="text" name="aFax" value="@ViewBag.ACustomer.Fax" /><br />
+    
+    <input type="submit" />
+
+</form>

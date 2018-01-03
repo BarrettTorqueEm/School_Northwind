@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "ListSupplier";
+}
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+<h1>List Of Suppliers</h1><br />
+<table>
+    <tr>
+        <th>Supplier Id</th>
+        <th>Company Name</th>
+        <th>Contact Name</th>
+        <th>Contact Title</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Region</th>
+        <th>Postal Code</th>
+        <th>Country</th>
+        <th>Phone</th>
+        <th>Fax</th>
+        <th>Home Page</th>
+    </tr>
+
+    @foreach (var a in ViewBag.aListOfSupplier)
+    {
+        <tr>
+            <td>@Html.Raw(a.SupplierId)</td>
+            <td>@Html.Raw(a.CompanyName)</td>
+            <td>@Html.Raw(a.ContactName)</td>
+            <td>@Html.Raw(a.ContactTitle)</td>
+            <td>@Html.Raw(a.Address)</td>
+            <td>@Html.Raw(a.City)</td>
+            <td>@Html.Raw(a.Region)</td>
+            <td>@Html.Raw(a.PostalCode)</td>
+            <td>@Html.Raw(a.Country)</td>
+            <td>@Html.Raw(a.Phone)</td>
+            <td>@Html.Raw(a.Fax)</td>
+            <td>@Html.Raw(a.HomePage)</td>
+        </tr>
+    }
+</table><br /><br />

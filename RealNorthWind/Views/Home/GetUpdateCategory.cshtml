@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "GetUpdateCategory";
+}
+
+<h2>GetUpdateCategory</h2>
+
+<form action="UpdateCategory?id=aId, aName=Name, aDescription=Description" >
+   
+    Category Id: <input type="number" name="aId" value="@ViewBag.ACategory.CategoryId" readonly /> <br />
+
+    Category Name : <input type="text" name="aName" value="@ViewBag.ACategory.CategoryName" /><br />
+
+    Description :   <input type="text" name="aDescription" value="@ViewBag.ACategory.Description" /><br />
+
+    <input type="submit" />
+
+</form>

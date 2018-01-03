@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "GetUpdateEmployee";
+}
+
+<h2>GetUpdateEmployee</h2>
+
+<form action="UpdateEmployee?aId=aId, aLastName=aLastName, aFirstName=aFirstName, aTitle=aTitle, aTitleOfCurtesy=aTitleOfCurtesy, aBirthDate=aBirthDate, aHireDate=aHireDate, anAddress=anAddress, aCity=aCity, aRegion=aRegion, aPostalCode=aPostalCode, aCountry=aCountry, aHomePhone=aHomePhone, aExtention=aExtention, aPhoto=aPhoto, aNotes=aNotes, aReportsTo=aReportsTo">
+
+    Employee Id:  <input type="number" name="aId" value="@ViewBag.AEmployee.EmployeeId" readonly /><br />
+
+    Last Name: <input type="text" name="aLastName" value="@ViewBag.AEmployee.LastName" /><br />
+
+    First Name: <input type="text" name="aFirstName" value="@ViewBag.AEmployee.FirstName" /><br />
+
+    Title: <input type="text" name="aTitle" value="@ViewBag.AEmployee.Title" /><br />
+
+    Title of Curtesy: <input type="text" name="aTitleOfCurtesy" value="@ViewBag.AEmployee.TitleOfCourtesy" /><br />
+
+    Birthdate: <input type="date" name="aBirthDate" value="@ViewBag.AEmployee.BirthDate" /><br />
+
+    Hire Date: <input type="date" name="aHireDate" value="@ViewBag.AEmployee.HireDate" /><br />
+    
+    Address: <input type="text" name="anAddress" value="@ViewBag.AEmployee.Address" /><br />
+
+    City: <input type="text" name="aCity" value="@ViewBag.AEmployee.City" /><br />
+
+    Region: <input type="text" name="aRegion" value="@ViewBag.AEmployee.Region" /><br />
+
+    Postal Code: <input type="text" name="aPostalCode" value="@ViewBag.AEmployee.PostalCode" /><br />
+
+    Country: <input type="text" name="aCountry" value="@ViewBag.AEmployee.Country" /><br />
+
+    Home Phone: <input type="text" name="aHomePhone" value="@ViewBag.AEmployee.HomePhone" /><br />
+
+    Extention: <input type="text" name="aExtention" value="@ViewBag.AEmployee.Extension" /><br />
+
+    Photo: <input type="text" name="aPhoto" value="@ViewBag.AEmployee.Photo" /><br />
+
+    Notes: <input type="text" name="aNotes" value="@ViewBag.AEmployee.Notes" /><br />
+
+    Reports To: <input type="number" name="aReportsTo" value="@ViewBag.AEmployee.ReportsTo" /><br />
+
+    <input type="submit" />
+
+</form>

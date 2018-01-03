@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "GetUpdateOrder";
+}
+
+<h2>GetUpdateOrder</h2>
+
+<form action="UpdateOrder?aId=aId, aCustomerId=aCustomerId, aEmployeeId=aEmployeeId, aOrderDate=aOrderDate, aRequiredDate=aRequiredDate, aShippedDate=aShippedDate, aShipVia=aShipVia, aFreight=aFreight, aShipName=aShipName, aShipAddress=aShipAddress, aShipCity=aShipCity, aShipRegion=aShipRegion, aShipPostalCode=aShipPostalCode, aShipCountry=aShipCountry">
+
+    Order Id: <input type="number" name="aId" value="@ViewBag.AOrder.OrderId" /><br />
+
+    Customer Id: <input type="text" name="aCustomerId" value="@ViewBag.AOrder.CustomerId" /><br />
+
+    Employee Id: <input type="number" name="aEmployeeId" value="@ViewBag.AOrder.EmployeeId" /><br />
+
+    Order Date: <input type="datetime" name="aOrderDate" value="@ViewBag.AOrder.OrderDate" /><br />
+
+    Required Date: <input type="datetime" name="aRequiredDate" value="@ViewBag.AOrder.RequiredDate" /><br />
+
+    Shipped Date: <input type="datetime" name="aShippedDate" value="@ViewBag.AOrder.ShippedDate" /><br />
+
+    Ship Via: <input type="number" name="aShipVia" value="@ViewBag.AOrder.ShipVia" /><br />
+
+    Freight: <input type="number" name="aFreight" value="@ViewBag.AOrder.Freight" /><br />
+
+    Ship Name: <input type="text" name="aShipName" value="@ViewBag.AOrder.ShipName" /><br />
+
+    Ship Address: <input type="text" name="aShipAddress" value="@ViewBag.AOrder.ShipAddress" /><br />
+
+    Ship City: <input type="text" name="aShipCity" value="@ViewBag.AOrder.ShipCity" /><br />
+
+    Ship Region: <input type="text" name="aShipRegion" value="@ViewBag.AOrder.ShipRegion" /><br />
+
+    Ship Postal Code: <input type="text" name="aShipPostalCode" value="@ViewBag.AOrder.ShipPostalCode" /><br />
+
+    Ship Country: <input type="text" name="aShipCountry" value="@ViewBag.AOrder.ShipCountry" /><br />
+
+    <input type="submit" />
+
+</form>
